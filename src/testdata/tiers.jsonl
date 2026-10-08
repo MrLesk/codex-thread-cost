@@ -1,0 +1,10 @@
+{"type": "session_meta", "payload": {"id": "01900000-0000-7000-8000-000000000001", "model_provider": "openai"}}
+{"type": "event_msg", "payload": {"type": "thread_settings_applied", "thread_id": "01900000-0000-7000-8000-000000000001", "thread_settings": {"model": "gpt-6.1-sol", "model_provider_id": "openai"}}}
+{"type": "turn_context", "payload": {"model": "gpt-6.1-sol"}}
+{"type": "token_usage_record", "payload": {"thread_id": "01900000-0000-7000-8000-000000000001", "response_id": "r1", "usage": {"input_tokens": 1000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}, "thread_token_usage": {"input_tokens": 1000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}}}
+{"type": "event_msg", "payload": {"type": "thread_settings_applied", "thread_id": "01900000-0000-7000-8000-000000000001", "thread_settings": {"model": "gpt-6.1-sol", "model_provider_id": "openai", "service_tier": "priority"}}}
+{"type": "turn_context", "payload": {"model": "gpt-6.1-sol"}}
+{"type": "token_usage_record", "payload": {"thread_id": "01900000-0000-7000-8000-000000000001", "response_id": "r2", "usage": {"input_tokens": 1000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}, "thread_token_usage": {"input_tokens": 2000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}}}
+{"type": "event_msg", "payload": {"type": "thread_settings_applied", "thread_id": "01900000-0000-7000-8000-000000000001", "thread_settings": {"model": "gpt-6.1-sol", "model_provider_id": "openai"}}}
+{"type": "turn_context", "payload": {"model": "gpt-6.1-sol"}}
+{"type": "token_usage_record", "payload": {"thread_id": "01900000-0000-7000-8000-000000000001", "response_id": "r3", "usage": {"input_tokens": 1000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}, "thread_token_usage": {"input_tokens": 3000, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 0}}}
