@@ -1,0 +1,12 @@
+{
+  "name": "thread-cost",
+  "version": "0.3.2",
+  "description": "Show the estimated cost of a Codex chat in its title.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {"displayName": "Thread Cost", "shortDescription": "Estimated chat cost in the title."}
+    }
+  }
+}

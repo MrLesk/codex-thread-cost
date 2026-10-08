@@ -1,0 +1,45 @@
+{
+  "description": "Update the chat's estimated cost after completion, interruption, or session startup and resume.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${PLUGIN_ROOT}/bin/$(uname -s)-$(uname -m)/thread-cost\" hook",
+            "commandWindows": "\"%PLUGIN_ROOT%\\bin\\Windows-%PROCESSOR_ARCHITECTURE%\\thread-cost.exe\" hook",
+            "timeout": 30,
+            "statusMessage": "Updating estimated thread cost (Stop)"
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${PLUGIN_ROOT}/bin/$(uname -s)-$(uname -m)/thread-cost\" hook",
+            "commandWindows": "\"%PLUGIN_ROOT%\\bin\\Windows-%PROCESSOR_ARCHITECTURE%\\thread-cost.exe\" hook",
+            "timeout": 3,
+            "statusMessage": "Updating estimated thread cost (Interrupt)"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${PLUGIN_ROOT}/bin/$(uname -s)-$(uname -m)/thread-cost\" hook",
+            "commandWindows": "\"%PLUGIN_ROOT%\\bin\\Windows-%PROCESSOR_ARCHITECTURE%\\thread-cost.exe\" hook",
+            "timeout": 30,
+            "statusMessage": "Updating estimated thread cost (SessionStart)"
+          }
+        ]
+      }
+    ]
+  }
+}

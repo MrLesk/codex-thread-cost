@@ -1,0 +1,10 @@
+{
+  "name": "thread-cost-local",
+  "interface": {"displayName": "Thread Cost"},
+  "plugins": [{
+    "name": "thread-cost",
+    "source": {"source": "local", "path": "./plugins/thread-cost"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+    "category": "Productivity"
+  }]
+}
